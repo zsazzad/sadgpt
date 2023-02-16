@@ -71,6 +71,7 @@
             </div>
             <div class="col-9">
                 <form id ="message-form" action="" class=" form-control" >
+                  {% csrf_token %}
                     <input  class="chat-input" type="text" style="width: 92%;" id="message-input">
                     <button class="btn btn-dark">submit</button>
                 </form>

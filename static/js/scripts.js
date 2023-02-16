@@ -14,11 +14,11 @@ form.addEventListener("submit", (event) => {
     userMessageDiv.textContent = userInput;
 
     conversation.appendChild(userMessageDiv);
-
-    fetch("/api/chatgpt", {
+    const csrfToken = document.querySelector("[name=csrfmiddlewaretoken]").value;
+    fetch("chatgpt/", {
         method: "POST",
         body: JSON.stringify({ message: userInput }),
-        headers: { "Content-Type": "application/json" }
+        headers: { "Content-Type": "application/json", "X-CSRFToken": csrfToken }
     })
         .then((response) => response.json())
         .then((data) => {
