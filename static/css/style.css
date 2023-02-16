@@ -1,13 +1,17 @@
-.chat-input{
-    border-style: none;
+.chat-input {
+    border-style: solid;
     outline: none;
 }
-.bg{
-    
+
+.bg {
+
     border-radius: 5px;
+    height: auto;
+    overflow: scroll;
 
 }
-.sender{
+
+.sender {
     border-radius: 5px;
     border: 1px solid black;
     background-color: azure;
@@ -15,7 +19,7 @@
     margin-right: 100px;
 }
 
-.receiver{
+.receiver {
     border-radius: 5px;
     border: 1px solid black;
     background-color: azure;
