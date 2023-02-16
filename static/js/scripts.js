@@ -26,6 +26,16 @@ form.addEventListener("submit", (event) => {
             chatbotMessageDiv.classList.add("sender");
             chatbotMessageDiv.textContent = data.message;
             conversation.appendChild(chatbotMessageDiv);
+            const audio = new Audio('static/audio/dog.mp3');
+            var repeatTimes = data.num_string;
+            console.log(repeatTimes)
+            audio.addEventListener('ended', function () {
+                repeatTimes--;
+                if (repeatTimes > 0) {
+                    audio.play();
+                }
+            });
+            audio.play();
         })
         .catch((error) => console.error(error));
     document.getElementById("message-input").value = "";

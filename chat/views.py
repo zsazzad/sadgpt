@@ -20,4 +20,4 @@ def chatgpt(request):
         for i in range(num_string):
             guau_string.append("guau")
         guau_string = " ".join(guau_string)
-        return JsonResponse({"message": guau_string})
+        return JsonResponse({"message": guau_string,"num_string":num_string+1})
