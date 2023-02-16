@@ -6,6 +6,8 @@
 .bg {
 
     border-radius: 5px;
+    height: auto;
+    overflow: scroll;
 
 }
 
