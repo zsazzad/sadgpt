@@ -1,0 +1,26 @@
+.chat-input{
+    border-style: none;
+    outline: none;
+}
+.bg{
+    
+    border-radius: 5px;
+
+}
+.sender{
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: azure;
+    padding: 10px;
+    margin-right: 100px;
+}
+
+.receiver{
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: azure;
+    padding: 10px;
+    margin-left: 100px;
+    text-align: right;
+
+}
